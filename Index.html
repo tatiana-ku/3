@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сложение чисел</title>
+</head>
+<body>
+    <script>
+        function sum(){
+            var a = parseInt(document.getElementById('a').value);
+			var b = parseInt(document.getElementById('b').value);
+ 
+			if (isNaN(a)==true) a=0;
+			if (isNaN(b)==true) b=0;
+ 
+			var c = a + b;
+            alert(c);
+        }
+    </script>
+    <form>
+        <input id="a" value="1"><br>
+        <input id="b" value="1"><br>
+        <input type="button" value="Вычислить" onclick="sum();"><br>
+    </form>
+</body>
+</html>
